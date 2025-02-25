@@ -1,3 +1,7 @@
+a {
+    color: white;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -17,10 +21,19 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 #form-container {
     width: 65%;
     height: 100%;
     background-color: white;
+}
+
+#bg-author {
+    align-self: center;
+    color: white;
+    font-size: small;
 }
