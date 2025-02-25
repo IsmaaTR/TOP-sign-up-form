@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    height: 98dvh;
+}
+
+#main-container {
+    width: 70dvw;
+    display: flex;
+}
+
+#logo-container {
+    width: 35%;
+    height: 100%;
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#form-container {
+    width: 65%;
+    height: 100%;
+    background-color: white;
+}
