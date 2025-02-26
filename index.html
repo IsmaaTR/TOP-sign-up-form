@@ -20,19 +20,45 @@
         <div id="right-side">
             <div id="form-container">
                 <div id="description-container">
-                    <p>
-                        This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
-                    </p>
-                    <p>
-                        Sign up now to get started.
-                    </p>
+                    <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+                    <p>Sign up now to get started.</p>
                     <br>
-                    <p>
-                        You know you want to.
-                    </p>
+                    <p>You know you want to.</p>
                 </div>
+                <form id="register-form" action="register" method="POST">
+                    <fieldset id="fieldset-form">
+                        <legend>Let's do this!</legend>
+                        <div id="form-group">
+                            <label for="firstName">FIRST NAME <span>*</span> </label>
+                            <input type="text" name="firstName" id="firstName">
+                        </div>
+                        <div id="form-group">
+                            <label for="lastName">LAST NAME <span>*</span></label>
+                            <input type="text" name="lastName" id="lastName">
+                        </div>
+                        <div id="form-group">
+                            <label for="email">EMAIL <span>*</span></label>
+                            <input type="text" name="email" id="email">
+                        </div>
+                        <div id="form-group">
+                            <label for="phoneNumber">PHONE NUMBER</label>
+                            <input type="text" name="phoneNumber" id="phoneNumber">
+                        </div>
+                        <div id="form-group">
+                            <label for="password">PASSWORD <span>*</span></label>
+                            <input type="password" name="password" id="password"
+                            pattern="(?=.*[A-Z])(?=.*\d).{8,}" required>
+                        </div>
+                        <div id="form-group">
+                            <label for="confirmPassword">CONFIRM PASSWORD <span>*</span></label>
+                            <input type="password" name="confirmPassword" id="confirmPassword"
+                            pattern="(?=.*[A-Z])(?=.*\d).{8,}" required>
+                        </div>
+                    </fieldset>
+                    <button id="create-account-btn" type="submit">Create Account</button>
+                </form>
                 <div id="login-container">
-                
+                    <p>Already have an account? <a id="login-link" href="login">Log in</a></p>
                 </div>
             </div>
         </div>
