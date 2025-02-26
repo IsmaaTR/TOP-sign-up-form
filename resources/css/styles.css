@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 @font-face {
     font-family: norse;
     src: url(../fonts/Norse-Bold.otf);
+}
+
+p {
+    margin: 0;
 }
 
 a {
@@ -17,6 +23,7 @@ body {
     justify-content: center;
     background-color: black;
     height: 98dvh;
+    font-family: "Roboto", serif;
 }
 
 #main-container {
@@ -24,7 +31,7 @@ body {
     display: flex;
 }
 
-#logo-container {
+#left-side {
     width: 35%;
     height: 100%;
     background-image: url("../img/background.jpg");
@@ -38,7 +45,7 @@ body {
     min-width:230px;
 }
 
-#form-container {
+#right-side {
     width: 65%;
     height: 100%;
     background-color: white;
@@ -61,4 +68,15 @@ body {
     align-self: center;
     color: white;
     font-size: small;
+}
+
+#form-container {
+    margin: 20% 0;
+}
+
+#description-container {
+    font-size: 1.4rem;
+    margin-left: 5%;
+    margin-right: 20%;
+    font-weight: 600;
 }
